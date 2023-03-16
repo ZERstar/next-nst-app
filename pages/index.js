@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Router from 'next/router'
-import Navbar from "./navbar";
+import Navbar from "../components/Navbar";
 export default function Index() {
   return (
     <>

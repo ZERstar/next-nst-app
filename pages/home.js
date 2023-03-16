@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 
 export default function about() {
   const [file1, setFile1] = useState(null);
@@ -14,6 +15,7 @@ export default function about() {
   }
   return (
     <div>
+    <Navbar/>
       <div className="bg-gradient-to-t from-[#141E30] to-[#243B55]">
         <div className="h-[90vh]">
           <div className="flex flex-row justify-around pt-20">
