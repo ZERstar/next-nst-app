@@ -107,6 +107,10 @@ export default function about() {
               GEN
             </button>
 
+            <button className="bg-white px-6 py-2" onClick={uploadImg}>
+              MINT
+            </button>
+
             <div>
               <label htmlFor="fileSelect2" className="bg-white px-6 py-2">
                 <input

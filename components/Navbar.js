@@ -1,5 +1,12 @@
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useMetamask , useAddress , useDisconnect } from "@thirdweb-dev/react"
 
 export default function Navbar() {
+  const connectMetamask = useMetamask();
+  const address = useAddress();
+  const disconnectToWallet = useDisconnect();
   return (
     <>
     <header>
@@ -12,12 +19,19 @@ export default function Navbar() {
           </i>
           rip
         </div>
+        {!address ? ( <ul className="flex items-center">
         <div>
           <button className="h-10 px-4 rounded-full bg-slate-700/20 text-[#141E30] border-[#141E30] border-2 font-bold hover:bg-slate-500
-           hover:text-white transition-all active:scale-90 md:text-sm md:px-4">
+           hover:text-white transition-all active:scale-90 md:text-sm md:px-4" onClick={connectMetamask}>
             Connect Wallet
           </button>
         </div>
+        </ul>)  : (
+          <ul>
+          
+        </ul>
+      
+      )}
       </div>
       </nav>
       </header>

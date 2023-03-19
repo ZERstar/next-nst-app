@@ -1,7 +1,9 @@
+import { useAddress } from "@thirdweb-dev/react";
 import Head from "next/head";
 import Router from 'next/router'
 import Navbar from "../components/Navbar";
 export default function Index() {
+  const address = useAddress();
   return (
     <>
         <Head>
