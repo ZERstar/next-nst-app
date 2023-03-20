@@ -28,6 +28,10 @@ export default function Navbar() {
         </div>
         </ul>)  : (
           <ul>
+          <button className="h-10 px-4 rounded-full bg-slate-700/20 text-[#141E30] border-[#141E30] border-2 font-bold hover:bg-slate-500
+           hover:text-white transition-all active:scale-90 md:text-sm md:px-4" onClick={disconnectToWallet}>
+            Connected
+          </button>
           
         </ul>
       
