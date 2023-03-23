@@ -67,7 +67,7 @@ export default function about() {
     <div>
       <Navbar />
       <div className="bg-gradient-to-t from-[#141E30] to-[#243B55]">
-        <div className="h-[90vh]">
+        <div className="h-[110vh]">
           <div className="flex flex-row justify-around pt-20">
             <div className={`border-2 border-white`}>
               <img src={file1} alt="abc1" className="w-60 h-60" />
@@ -107,9 +107,11 @@ export default function about() {
               GEN
             </button>
 
-            <button className="bg-white px-6 py-2" onClick={uploadImg}>
-              MINT
-            </button>
+            <div>
+                <button className="bg-white px-6 py-2" onClick={uploadImg}>
+                MINT
+                </button>
+            </div>
 
             <div>
               <label htmlFor="fileSelect2" className="bg-white px-6 py-2">
@@ -139,6 +141,14 @@ export default function about() {
 
           <div className="res">
                 <img src={res} alt="" />
+          </div>
+          <div className="flex flex-row justify-around pt-20">
+            <div className={`border-2 border-white`}>
+              <img src={file1} alt="abc1" className="w-60 h-60" />
+            </div>
+            
+            
+            
           </div>
 
         </div>
